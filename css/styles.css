@@ -3231,7 +3231,7 @@ img.u-pull-left {
 }
 
 .s-intro__text-huge {
-    --text-huge-size : 24.6rem;
+    --text-huge-size : 12rem;
     font-size        : var(--text-huge-size);
     line-height      : 1;
     letter-spacing   : -0.015em;
@@ -3244,7 +3244,7 @@ img.u-pull-left {
  * ## intro bg
  * -------------------------------------------------------------------- */
 .s-intro__bg {
-    aspect-ratio        : 1/1;
+    aspect-ratio        : 4/3;
     width               : 100%;
     background-color    : var(--color-gray-4);
     background-image    : url(../images/intro-bg.jpg);
