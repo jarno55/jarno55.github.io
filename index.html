@@ -17,6 +17,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- favicons
     ================================================== -->
@@ -61,7 +62,10 @@
 
                 <nav class="s-header__nav">
                     <ul>
-
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#projects" class="smoothscroll">Projects</a></li>
+                        <li><a href="#live" class="smoothscroll">Live</a></li>
+                        <li><a href="#contact" class="smoothscroll">Contact</a></li>
                     </ul>
                 </nav> <!-- end s-header__nav -->
 
@@ -93,14 +97,116 @@
 
         </section> <!-- end s-intro -->
 
+        <!-- about
+        ================================================== -->
+        <section id="about" class="s-about">
 
+
+            <div class="s-about__block s-about__intro">
+
+                <div class="row">
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle animate-on-load">About</h2>
+    
+                        <p class="attention-getter animate-on-load">
+                            Jeremias Schmidli is a pianist, composer, and educator based in Winterthur. With his music, he creates a fascinating combination of neoclassical, minimal music, jazz and pop, which he brings to life on the piano. His compositions are characterised by hypnotic melodies and captivating harmonies that transport the audience into profound worlds of sound. With a sensitive yet innovative approach, he creates works that are both introspective and stimulating, giving them the ability to convey emotions and tell stories.
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- end s-about__intro -->
+
+
+        </section> <!-- end s-about -->
      
+
+                <!-- Projects
+        ================================================== -->
+        <section id="projects" class="s-projects">
+
+
+            <div class="s-about__block s-about__intro">
+
+
+                <div class="row s-about__projects" data-animate-block>
+                    <div class="column lg-12" data-animate-el>
+    
+                        <h2 class="text-pretitle">Selected Projects</h2>
+    
+                        <ul class="clients-list text-huge-title">
+                            <li><a href="https://webelieveinhyperspace.com" target="_blank">We Believe in Hyperspace (Space Rock)</a></li>
+                            <li><a href="https://traction-band.com" target="_blank">Traction (Contemporary Jazz)</a></li>
+                        </ul>
+    
+                    </div>
+                </div> <!-- end s-about__clients-->
+
+            </div> <!-- end s-about__career -->
+
+        </section> <!-- end s-about -->
+     
+
+        <!-- live
+        ================================================== -->
+        <section id="live" class="s-live">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <h2 class="text-pretitle">Live</h2>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column lg-12">
+                    <ul class="concerts-list">
+                        <li>
+                            <a href="https://www.horstklub.ch/" target="_blank">16.5.25 Horst Klub, Kreuzlingen (with We Believe in Hyperspace)</a>
+                        </li>
+                        <li>
+                            <a href="https://portier.lagerplatz.ch/veranstaltungen.htm" target="_blank">19.5.25 Portier, Winterthur (Solo)</a>
+                        </li>
+                        <li>
+                            <a href="https://kaffee-augenblick.ch/aktuell/" target="_blank">23.5.25 Kaffee Augenblick, Winterthur (Solo)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section> <!-- end s-live -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="s-contact">
+            <div class="row s-contact__header">
+                <div class="column lg-12">
+                    <h2 class="text-pretitle">Contact</h2>
+
+                    <p class="attention-getter animate-on-load">
+                        Get in touch! 
+                        <a id="email" href="" class="icon fas fa-envelope" onclick="openMailer(this);" style="margin-left: 10px;"></a>
+                    </p>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function decode(a) {
+                    return a.replace(/[a-zA-Z]/g, function(c) {
+                        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+                    });
+                }
+                function openMailer(element) {
+                    var y = decode("znvygb:pbagnpg@wrerzvnffpuzvqyv.pbz");
+                    element.setAttribute("href", y);
+                    element.setAttribute("onclick", "");
+                }
+            </script>
+        </section>
 
         <!-- # site footer
         ================================================== -->
         <footer id="colophon" class="s-footer">
 
-            
+
 
             <div class="row s-footer__bottom">
                 <div class="column ss-copyright">
@@ -167,3 +273,4 @@
 
 </body>
 </html>
+``` 

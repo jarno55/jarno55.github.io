@@ -74,7 +74,7 @@
  * ## fonts 
  * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap");
-@import url(fontawesome-all.min.css);
+
 :root {
     --font-1    : "Inter", sans-serif;
     --font-2    : "Castoro", serif;
@@ -1749,16 +1749,6 @@ ul.disc li::before {
     left           : -.9em;
     top            : 11px;
     vertical-align : middle;
-}
-
-ul.icons {
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-}
-
-ul.icons li {
-    display: inline-block; /* Ensures icons are inline */
 }
 
 dt {
@@ -4043,7 +4033,6 @@ img.u-pull-left {
 }
 
 .s-footer__contact-header {
-    margin-top: 2rem; /* Decrease spacing above the Contact section */
     margin-bottom : var(--vspace-2);
 }
 
@@ -4194,25 +4183,5 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-live {
-    margin-top: 6rem; /* Optional: Add spacing above Live section */
-    margin-bottom: 2rem; /* Match the spacing with the .s-about section */
-}
-
-/* ===================================================================
- * # PROJECTS
- *
- *
- * ------------------------------------------------------------------- */
-.s-projects {
-    margin-bottom: 6rem; /* Increase spacing below Selected Projects */
-}
-
-/* ===================================================================
- * # LIVE
- *
- *
- * ------------------------------------------------------------------- */
- .s-contact {
-    margin-top: 6rem; /* Optional: Add spacing above Live section */
-    margin-bottom: 2rem; /* Match the spacing with the .s-about section */
+    margin-bottom: 4rem; /* Match the spacing with the .s-about section */
 }
