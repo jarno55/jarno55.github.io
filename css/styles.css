@@ -92,15 +92,15 @@
     /* color-1(#5F9295)
      * color-2(#2D2327)
      */
-    --color-1                      : hsla(183, 22%, 48%, 1);
+    --color-1                      : rgb(255, 255, 255);
     --color-2                      : hsla(336, 13%, 16%, 1);
 
     /* theme color variations
      */
-    --color-1-lighter              : hsla(183, 22%, 68%, 1);
-    --color-1-light                : hsla(183, 22%, 58%, 1);
-    --color-1-dark                 : hsla(183, 22%, 38%, 1);
-    --color-1-darker               : hsla(183, 22%, 28%, 1);
+    --color-1-lighter              : rgb(255, 255, 255);
+    --color-1-light                :  rgb(169, 169, 169);
+    --color-1-dark                 :  rgb(169, 169, 169);
+    --color-1-darker               :  rgb(169, 169, 169);
 
     --color-2-lighter              : hsla(336, 13%, 36%, 1);
     --color-2-light                : hsla(336, 13%, 26%, 1);
@@ -171,13 +171,13 @@
 
     /* preloader
      */
-    --color-preloader-bg           : #CFE6E8;
+    --color-preloader-bg           : #ffffff;
     --color-loader                 : var(--color-text-dark);
     --color-loader-light           : var(--color-1-lighter);
 
     /* others
      */
-    --color-body                   : #CFE6E8;
+    --color-body                   : #ffffff;
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
@@ -3204,11 +3204,43 @@ img.u-pull-left {
  *
  *
  * ------------------------------------------------------------------- */
+
 .s-intro {
-    padding-top : calc(9.5 * var(--space));
-    width       : 100%;
-    position    : relative;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
+
+.s-intro__bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.s-intro__bg img {
+    display: block;
+    width: 100%;       /* always fill full width */
+    height: auto;      /* keep aspect ratio so whole image is visible */
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.s-intro__text,
+.s-intro__content {
+    position: relative;
+    z-index: 2; /* ensures text appears above the image */
+}
+
+/* optional: prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+}
+
 
 .s-intro__content {
     position : relative;
@@ -3233,7 +3265,7 @@ img.u-pull-left {
     line-height    : 1.0998;
     letter-spacing : -.01em;
     margin-top     : 0;
-    color          : white;
+    color          : rgb(73, 73, 73);
 }
 
 .s-intro__text h3 span {
@@ -3247,37 +3279,9 @@ img.u-pull-left {
     letter-spacing   : -0.015em;
     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
     margin-bottom    : var(--vspace-1_25);
-    color            : white;
+    color            : rgb(73, 73, 73);
 }
 
-/* --------------------------------------------------------------------
- * ## intro bg
- * -------------------------------------------------------------------- */
-.s-intro__bg {
-    aspect-ratio        : 4/3;
-    width               : 100%;
-    background-color    : var(--color-gray-4);
-    background-image    : url(../images/intro-bg.jpg);
-    background-repeat   : no-repeat;
-    background-position : center;
-    background-size     : cover;
-    position            : relative;
-}
-
-.s-intro__bg::after {
-    display        : block;
-    content        : "";
-    position       : absolute;
-    top            : 0;
-    left           : 0;
-    right          : 0;
-    bottom         : 0;
-    width          : 100%;
-    height         : 100%;
-    background     : linear-gradient(180deg, black 5%, rgba(0, 0, 0, 0) 100%);
-    pointer-events : none;
-    opacity        : .12;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
