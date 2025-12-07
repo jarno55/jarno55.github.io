@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Jeremias Schmidli - Contact</title>
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+         <div class="col-md-12">
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar middle"></span>
+               <span class="icon-bar bottom"></span>
+               </button>
+            </div>
+            <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/logo.png" alt="logo">
+            </a>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="projects.html">Projects</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="live.html">Live</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h2>
+                     Get in touch! 
+                  </h2>
+                  <script type="text/javascript">
+                     function decode(a) {
+                     return a.replace(/[a-zA-Z]/g, function(c){
+                     return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+                     })
+                     }; 
+                     function openMailer(element) {
+                     // decode and set a proper mailto: link, and update the displayed label
+                     var decoded = decode("pbagnpg@wrerzvnffpuzvqyv.pbz");
+                     element.setAttribute("href", "mailto:" + decoded);
+                     element.removeAttribute("onclick");
+                     var label = element.querySelector('.label');
+                     if(label) label.textContent = "Open email software";
+                     };
+                  </script>
+                  <h3>
+                     <a id="email" href="" class="fas fa-envelope" onclick="openMailer(this);"><span class="label">Mail: please click</span></a>
+                  </h3>
+               </div>
+            </div>
+            <div class="row margin-top-45">
+               <div class="col-md-12">
+                  <img class="img-responsive margin-top-45" src="img/jeremias-roxy.jpg" alt="me">
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- script -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
