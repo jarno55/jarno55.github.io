@@ -6,19 +6,20 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-      <title>Jeremias Schmidli - Selected Projects</title>
+      <title>Newsletter - Jeremias Schmidli</title>
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <!-- Cache-busting query param so local file:// loads updated CSS -->
+      <link href="css/style.css?v=20251208" rel="stylesheet">
    </head>
    <body>
-      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
          <div class="col-md-12">
             <div class="nav">
                <button class="btn-nav">
-               <span class="icon-bar top"></span>
-               <span class="icon-bar middle"></span>
-               <span class="icon-bar bottom"></span>
+               <span class="icon-bar inverted top"></span>
+               <span class="icon-bar inverted middle"></span>
+               <span class="icon-bar inverted bottom"></span>
                </button>
             </div>
             <a class="navbar-brand" href="index.html">
@@ -36,17 +37,17 @@
             </div>
          </div>
       </nav>
-      <section id="projects">
+      <!-- Newsletter Section -->
+      <section id="newsletter">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <h1>Selected Projects</h1>
-                  <ul class="margin-top-40" style="list-style: none; padding-left: 0;">
-                     <li><a href="https://webelieveinhyperspace.com" target="_blank">We Believe in Hyperspace (Space Rock)</a></li>
-                     <li class="margin-top-40"><a href="https://traction-band.com" target="_blank">Traction (Contemporary Jazz)</a></li>
-                  </ul>
-                  
-                  <img class="img-responsive margin-top-45" src="img/piano.jpg" alt="piano">
+               <div class="col-md-12 text-center">
+                  <p class="attention-getter animate-on-load">
+                     Sign up to newsletter:
+                  </p>
+                  <p class="attention-getter animate-on-load">
+                     <iframe src="https://embeds.beehiiv.com/03ca837b-3225-4900-9a1c-b7420d2ec9ce?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+                  </p>
                </div>
             </div>
          </div>
@@ -54,7 +55,8 @@
       <!-- script -->
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/menu-color.js"></script>
       <script src="js/modernizr.js"></script>
       <script src="js/script.js"></script>
-   </body>  
+   </body>
 </html>

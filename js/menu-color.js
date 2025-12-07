@@ -1,17 +1,13 @@
-// Change Color Navbar Elements on Scroll
+// Always use regular (dark) version for logo and menu
 
    $(window).scroll(function(){
-    if ($(this).scrollTop() > 350) {
-       $('.icon-bar').addClass('opaque');
-       $('.navbar-brand img').attr('src', 'img/logo-light.png');
-    } else {
-       $('.icon-bar').removeClass('opaque');
-       $('.navbar-brand img').attr('src', 'img/logo.png');
-    }
+    // Keep regular dark version at all times
+    $('.icon-bar').removeClass('opaque');
+    $('.navbar-brand img').attr('src', 'img/logo.png');
 });
 
-
-
+// Disabled second scroll handler - keeping dark version only
+/*
 $(function(){
     $(window).scroll(function(){
         if($(this).scrollTop() > 100) {
@@ -26,3 +22,4 @@ $(function(){
         }
     });
 });
+*/
