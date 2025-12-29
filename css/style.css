@@ -90,6 +90,12 @@ a:visited {
     margin-top: 4.5em;
 }
 
+/* Utility: bottom margin for spacing after images */
+.margin-bottom-60 {
+    margin-bottom: 60px;
+}
+ 
+
 /*---------- Navbar ----------*/
 
 .nav {
@@ -151,7 +157,12 @@ a:visited {
     background-color: #222;
 }
 .icon-bar.inverted {
-    background-color: #222;
+    background-color: #fff;
+}
+@media (max-width: 992px) {
+    .icon-bar.inverted {
+        background-color: #222;
+    }
 }
 .opaque {
     background-color: #fff!important;
@@ -518,25 +529,6 @@ a:visited {
     width: 100%;
     height: 100vh!important;
     object-fit: cover;
-}
-
-/* Desktop: add larger spacing between words */
-.col-md-6 h2 {
-    word-spacing: 20px;
-}
-
-/* Mobile: Stack "Pianist Composer Educator" vertically and center */
-@media (max-width: 768px) {
-    .col-md-6 h2 {
-        font-size: 1.2em;
-        line-height: 1.8;
-        width: 100%;
-        overflow-wrap: break-word;
-        word-break: break-word;
-        max-width: 150px;
-        margin: 0 auto;
-        text-align: center;
-    }
 }
 
 /* Mobile: limit logo size to avoid overflow and large header */
