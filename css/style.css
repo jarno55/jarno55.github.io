@@ -59,6 +59,26 @@ a:visited {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
 }
+
+/* Hero heading: make each word stack and center on narrow screens */
+.hero-heading {
+    display: inline-block;
+}
+.hero-heading .hero-word {
+    display: inline-block;
+    margin: 0 14px;
+}
+@media (max-width: 480px) {
+    .hero-heading {
+        display: block;
+        text-align: center;
+        line-height: 1.4;
+    }
+    .hero-heading .hero-word {
+        display: block;
+        margin: 6px 0;
+    }
+}
 .fill {
     height: 100vh;
 }
