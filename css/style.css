@@ -79,6 +79,34 @@ a:visited {
         margin: 6px 0;
     }
 }
+
+/* Video page title styles: use Open Sans (matching previous heading font) */
+.video-title,
+.video-section-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: #111;
+    margin: 0 0 8px 0 !important;
+    display: block;
+}
+.video-caption {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #666;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+/* Ensure consistent spacing after rows of embedded videos */
+.embed-row-gap {
+    margin-bottom: 100px !important;
+}
+
+/* Slightly larger bottom gap for the Live heading area */
+.live-title {
+    margin-top: 40px !important;
+    margin-bottom: 48px !important;
+}
 .fill {
     height: 100vh;
 }
